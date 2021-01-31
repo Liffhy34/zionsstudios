@@ -1,87 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="scroll.css">
-        <link rel="stylesheet" media="screen" href="screen.css" type="text/css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <title>ZionsStudios | Official Page</title>
-    </head>
-    <body>
-        <div class="navbar">
-            <label class="logo">ZionsStudios</label>
-            <ul>
-                <li><a href="#"><i class="fas fa-align-left"></i> Forum</a></li>
-                <li><a href="#"><i class="fas fa-hand-holding-usd"></i> Donation</a></li>
-            </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="ZionsStudios IT">
+    <meta description="ZionsStudios é un Team di developers, pronto a soddisfare ogni tuo bisogno.">
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/screen.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/keyframes.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZionsStudios IT</title>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="menu" id="menu-btn" onclick="menu()">
+            <div class="line"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-        <header>
-            <div class="wrapper">
-                <div class="content">
-                    <div class="welcome_message">
+        <div class="close" id="close" style="display: none;" onclick="menuClose()">
+            <i class="fas fa-window-close" style="color: white"></i>
+                <ul>
+                    <li><a href="#">Noi</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Progetti</a></li>
+                    <li><a href="#">Pre-Ordina</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <section id="header-content">
+            <section class="header-content-main">
+                <div class="ctn-main" id="ctn-main">
+                    <img src="./assets/img/logo.png" height="300" width="300" id="logo">
+                    <p>
+                        Noi siamo <strong>zionsstudios</strong>, noi siamo la tua soluzione! 
+                        zionsstudios non é <strong>solo un team di Developers, Designers e configuratori</strong> ma anche un punto di rifemento in caso di problemi con i tuoi <b>progetti</b>!
+                        zionsstudios é nato con l'intento di soddisfare a voi clienti tutti i vostri bisogni.. 
+                        Allora che aspetti continua a visitare il nostro <strong>sito web</strong>!
+                    </p>
+                    <br>
+                    <img src="./assets/img/photo_2021-01-29_14-45-23.jpg" alt="vectorial" height="64" width="64" onclick="vectorial()" id="logo-vt">
+                    <img src="./assets/img/unix.jpg" alt="unix" height="64" width="64" id="logo-vt">
+                    <br>
+                    <i class="fas fa-arrow-circle-down"></i>
+                </div>
+                <div class="vectorial" id="vectorial">
+                    <div class="vectorial-content">
+                        <h1>Vectorial Learn</h1>
+                        <p>
+                            Vectorial Learn é un gruppo di learning totalmente gratuito, 
+                            dove potrete imparare la programmazione Java e la programmazione Web,
+                            Il gruppo é stato Fondato da <strong>Liffhy32</strong> e da <strong>MatteoDev</strong>
+                        </p>
                         <br>
-                        <h1>Welcome!</h1>
-                        <p>ZionsStudios Official WebSite!</p>
-                        <p>Here you can find all about ZionsStudios Projects</p>
-                        <br>
-                        <p>🔗| Follow us</p>
-                        <div class="socials">
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-telegram"></i>
-                            <i class="fab fa-teamspeak"></i>
-                            <i class="fab fa-discord"></i>
-                            <i class="fas fa-envelope-square"></i>
-                        </div>
+                        <i class="fas fa-window-close" onclick="vtclose()"></i>
                     </div>
                 </div>
-            </div>
-        </header>
-        <article>
-            <div class="content_message">
-                <div class="ob_message">
-                    <img src="objectif.png" alt="objectif logo" height="100" width="100">
-                    <h1>ZionsStudios Objectif</h1>
-                    <p>
-                        <strong>Zionsstudios</strong> wants to help every single project, <br>
-                        wants to give them the <strong>opportunity</strong> to be level with other projects or be greatest them us by innovating, <br>
-                        all for different types of prices.
-                        Zionsstudios also wants to give some help to those who do not have the willingness to be able to fix, <br>
-                        to improve, and <strong>also for people wants to learn</strong>.
-                    </p>
-                    <br>
-                    <a href="#" id="projectsbtn">Projects & Services</a>
-                </div>
-                <br>
-                <div class="member_message">
-                    <h1>Who can be Member</h1>
-                    <p>
-                        Any person can become part of the project, but on the condition that they are motivated that they want to learn new things, <br>
-                        that they want to show what they are worth. <br>
-                        For the moment our team will have as places 25 places so <br>
-                        if you want to give you an opportunity to show who you are
-                    </p>
-                    <br>
-                    <a href="/form" id="member_botton">Join</a>
-                </div>
-                <div class="talkwithus">
-                    <h1>Talk With US</h1>
-                    <br>
-                    <p>
-                        <a href="https://discord.gg/MDEej8N"><video src="discord.mp4" height="300" width="600" autoplay loop></video></a>
-                        <a href=""><video src="TEAMSPEAK.mp4" height="300" width="600" autoplay loop></video></a>
-                    </p>
-                    <br>
-                    <br>
-                    <p>Copyright © 2020 ZionsStudios – All rights reserved.</p>
-                    <h1>PARTNERS</h1>
-                    <p>PluginArchive</p>
-                    <p>SpyralBuilding</p>
-                    <h1>EMAIL</h1>
-                    <p><a href="maito:zionsstudios@gmail.com">zionsstudios@gmail.com</a></p>
-                </div>
-            </div>
-        </article>
-    </body>
+            </section>
+        </section>
+    </div>
+    <section class="aboutus" id="about" style="display: none;"></section>
+    <script src="./assets/js/js.js"></script>
+</body>
 </html>
